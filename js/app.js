@@ -1,5 +1,5 @@
 import { generateSPC } from "./encoder.js";
-import { decodeSPC } from "./decoder.js";
+import { decodeSPC } from "./decoder_fft.js";
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
