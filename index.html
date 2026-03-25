@@ -2,21 +2,36 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>SPC - Spectral Pattern Code</title>
+<title>SPC v6 - Advanced</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<h1>🚀 Spectral Pattern Code (SPC)</h1>
+<h1>🚀 SPC v6 — Spectral Pattern Code</h1>
 
 <div class="container">
   <input id="textInput" placeholder="Enter text">
-  <button id="generateBtn">Generate SPC</button>
-  <button id="decodeBtn">Decode SPC</button>
 
-  <canvas id="canvas" width="300" height="300"></canvas>
+  <br>
+  <button id="generateBtn">Generate</button>
+  <button id="decodeBtn">Decode</button>
+  <button id="saveBtn">Save</button>
+
+  <br><br>
+
+  <input type="file" id="fileInput" accept="image/*">
+  <button id="uploadBtn">Upload Decode</button>
+
+  <br><br>
+
+  <button id="cameraBtn">Camera Scan</button>
+  <video id="video" width="256" height="256" autoplay style="display:none;"></video>
+
+  <canvas id="canvas" width="256" height="256"></canvas>
+
+  <h3 id="status">Status: Ready</h3>
   <h3 id="output"></h3>
 </div>
 
